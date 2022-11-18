@@ -1,7 +1,12 @@
 import React from 'react'
-import { Home } from './Components/Home'
 import './styles/App.scss'
-import Logo from './assets/pizzaLogo.png'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
+import { Navbar } from './Components/Navbar'
+import { Footer } from './Components/Footer'
+
+import { Home } from './pages/Home'
+import { About } from './pages/About'
 
 //bootstrap
 // import * as bootstrap from 'bootstrap'
@@ -10,14 +15,14 @@ import Logo from './assets/pizzaLogo.png'
 
 const App = () => (
   <div>
-    <h1>Hello world! I am using React</h1>
-    <Home />
-    <div className="leftSide">
-      <img src={Logo} alt="" />
-      <button type="button" className="btn btn-primary">
-        Primary
-      </button>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/About" element={<About />} />
+      </Routes>
+      <Footer />
+    </Router>
   </div>
 )
 

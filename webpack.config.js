@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
+const loader = require('sass-loader')
 
 module.exports = {
   entry: path.resolve(__dirname, 'src', 'index.js'),
