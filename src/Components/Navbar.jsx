@@ -15,26 +15,34 @@ export const Navbar = () => (
       </div>
       <div>
         <ul className="d-flex flex-row justify-start navbar-nav me-auto mb-2 mb-lg-0">
-          <Link className="nav-item" style={{ marginLeft: '1em' }} to="/">
+          <Link
+            className="nav-item"
+            style={{ marginLeft: '1em', textDecoration: 'none' }}
+            to="/"
+          >
             Home
           </Link>
 
           <Link
-            to="/pedidos"
+            to="/menu"
             className="nav-item"
-            style={{ marginLeft: '10px' }}
+            style={{ marginLeft: '10px', textDecoration: 'none' }}
           >
-            Pedidos
+            Menu
           </Link>
           <Link
-            to="/contato"
+            to="/about"
             className="nav-item"
-            style={{ marginLeft: '10px' }}
+            style={{ marginLeft: '10px', textDecoration: 'none' }}
           >
-            Contato
+            About
           </Link>
-          <Link to="/about" className="nav-item" style={{ marginLeft: '10px' }}>
-            Sobre nós
+          <Link
+            to="/contact"
+            className="nav-item"
+            style={{ marginLeft: '10px', textDecoration: 'none' }}
+          >
+            Contact
           </Link>
         </ul>
       </div>
