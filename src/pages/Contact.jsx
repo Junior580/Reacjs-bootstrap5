@@ -60,7 +60,11 @@ export const Contact = () => (
           rows="6"
           required
         ></textarea>
-        <button type="submit" className="btn btn-dark">
+        <button
+          type="submit"
+          className="btn btn-dark"
+          style={{ marginTop: '10px' }}
+        >
           Send Message
         </button>
       </form>

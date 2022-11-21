@@ -1,16 +1,9 @@
 import React from 'react'
+import style from '../styles/Footer.module.scss'
 
 export const Footer = () => (
-  <div
-    className="d-flex justify-content-center align-items-center flex-column"
-    style={{
-      width: '100%',
-      height: '200px',
-      background: '#121619',
-      paddingTop: '10px',
-    }}
-  >
-    <div className="socialMedia">
+  <div className={style.footer}>
+    <div className={style.socialMedia}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         style={{
