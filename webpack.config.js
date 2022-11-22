@@ -38,6 +38,7 @@ module.exports = {
         test: /\.(gif|png|jpe?g)$/i,
         use: 'file-loader',
       },
+
       {
         test: /\.(scss)$/,
         use: [

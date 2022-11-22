@@ -1,7 +1,7 @@
 # ReactJS + Bootstrap5.
 
 **React JS**
--Template for creating pages with React JS without using vite, and create react app.
+-Template to creating pages with React JS without using vite, and create react app.
 
 **Webpack and babel**
 -webpack está configurados para transpilar scss, e images
